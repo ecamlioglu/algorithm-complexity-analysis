@@ -17,14 +17,14 @@ public class Main {
             var inputLine = reader.nextLine();
             var inputs = inputLine.toCharArray();
             if (inputs.length < 3) {
-                System.out.println("Txt dosyanız hatalıdır. Txt dosyanız içerisindeki koordinat bilgilerinin mxn şeklinde olduğundan emin olunuz.");
+                System.out.println("Error... Check txt file again.");
             } else {
                 m = Integer.parseInt(String.valueOf(inputs[0]));
                 n = Integer.parseInt(String.valueOf(inputs[2]));
-                System.out.println("TXT dosyasından okunan matris boyutu: " + m + "-" + n);
+                System.out.println("Matrix size in txt file: " + m + "-" + n);
             }
         } else {
-            System.out.println("Txt dosyası girmediğiniz için 5x5 lik bir matrisle işlemlere başlandı.");
+            System.out.println("Unknown TXT file. Default matrix size 5x5. Running...");
             m = 5;
             n = 5;
         }
